@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenPartDef>
+    <defName>TheLastOne_ConfigureStartingPawns</defName>
+    <label>starting person</label>
+    <category>Fixed</category>
+    <scenPartClass>ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs</scenPartClass>
+    <pageClass>Page_ConfigureStartingPawns</pageClass>
+    <summaryPriority>500</summaryPriority>
+  </ScenPartDef>
+
+  <ScenarioDef>
+    <defName>LastOne_Scenario</defName>
+    <label>마지막 하나</label>
+    <description>단독종의 유일한 생존자로 새로운 삶을 시작합니다.</description>
+    <scenario>
+      <summary>단독종 한 명으로 시작합니다.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>TheLastOne_ConfigureStartingPawns</def>
+          <pawnChoiceCount>1</pawnChoiceCount>
+          <kindCounts>
+            <li>
+              <kindDef>LastOne_Solo</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <visible>false</visible>
+          <method>Standing</method>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef>
+    <defName>LastOne_Solo</defName>
+    <label>단독 생존자</label>
+    <race>LastOne_Race</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>0</combatPower>
+  </PawnKindDef>
+</Defs>
