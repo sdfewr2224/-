@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>The Last One</name>
+  <author>sdfewr2224</author>
+  <packageId>sdfewr2224.thelastone</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Adds a standalone humanoid race and a scenario that begins with exactly one member. The race is not included in world-generation factions or events.</description>
+</ModMetaData>
